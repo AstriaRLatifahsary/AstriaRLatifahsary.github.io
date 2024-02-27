@@ -9,7 +9,7 @@ body {
 /*navbar*/
 nav {
   display: flex;
-  background-color: coral;
+  background-color: rgb(136, 164, 255);
   justify-content: space-around;
   /* padding: 20px 0; atas bawah 20  kiri kanan 0 */
   /* atur padding dengan flex */
@@ -92,10 +92,11 @@ nav ul li a:hover {
    
     width: 100%;
     height: auto;  
-    max-width: 140px;
+    max-width: 200px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 30px;
 }
 
 .container {
@@ -115,7 +116,7 @@ main {
 
 .box {
     margin: 5px;
-    padding: 10px;
+    padding: 50px;
     border-radius: 5px;
 }
 /* supaya ada jarak antar box  */
@@ -128,19 +129,38 @@ flex-grow: 1;
 footer {
     text-align: center;
 }
+h1 {
+  
+  text-align: left;
+  color: rgb(34, 128, 145);
+  text-justify: inter-word;
+  word-wrap: break-word;
+  font-size: 25px;
+}
 h2 {
   
     text-align: center;
     color: brown;
     text-justify: inter-word;
     word-wrap: break-word;
-
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h4 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: medium;
+  text-align: center;
 }
 h5 {
   text-align: center;
-  color: red;
+  color: rgb(255, 147, 147);
   word-wrap: break-word;
- 
+  font-size: 25px;
+  font-style: italic;
 }
 p {
     text-align: justify;
@@ -179,4 +199,10 @@ p {
         /* transform: translateX(0); */
     }
   }
+/* Add border to box with class flex two */
+.box.flextwo {
+  border: 2px solid blue; /* You can adjust the border thickness and color as needed */
+  padding: 10px; /* Optional: Add padding for better spacing */
+  margin-bottom: 20px; /* Optional: Add margin bottom for better separation between boxes */
+}
 
