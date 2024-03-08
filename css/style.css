@@ -202,7 +202,45 @@ p {
 /* Add border to box with class flex two */
 .box.flextwo {
   border: 2px solid blue; /* You can adjust the border thickness and color as needed */
-  padding: 10px; /* Optional: Add padding for better spacing */
-  margin-bottom: 20px; /* Optional: Add margin bottom for better separation between boxes */
+  padding: 20px; /* Optional: Add padding for better spacing */
+  margin-bottom: 50px; /* Optional: Add margin bottom for better separation between boxes */
 }
 
+@keyframes rotate {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.element {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(17, 19, 56);
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  position: relative;
+  animation: rotate 3s linear infinite;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+/* Tambahkan background untuk tiga garis */
+.menu-toggle span {
+  display: block;
+  width: 21px;
+  height: 2px;
+  background-color: #c1e0fa; 
+  border-radius: 2px; 
+  transition: all 0.7s;
+}
