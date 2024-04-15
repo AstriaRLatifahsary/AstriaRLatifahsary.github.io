@@ -6,6 +6,34 @@ body {
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
 }
+
+/* Gaya untuk tabel */
+table {
+  width: 80%; /* Atur lebar tabel sesuai kebutuhan */
+  margin: 0 auto; /* Atur margin tabel agar berada di tengah */
+  border-collapse: collapse; /* Menggabungkan border */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan untuk efek kedalaman */
+}
+
+th, td {
+  padding: 12px; /* Tambahkan padding untuk jarak antar sel */
+  text-align: left; /* Atur teks sel menjadi rata kiri */
+  border: 1px solid #ddd; /* Tambahkan border halus */
+}
+
+th {
+  background-color: rgb(136, 164, 255); /* Atur warna latar belakang untuk header */
+  color: white; /* Atur warna teks header */
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* Warna latar belakang baris genap */
+}
+
+tr:hover {
+  background-color: #ddd; /* Warna latar belakang saat baris dihover */
+}
+
 /*navbar*/
 nav {
   display: flex;

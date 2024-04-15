@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyek1 STr HTML 27 02 2024</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- Impor jQuery dari CDN atau dari file lokal -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/scrappedData.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Srisakdi&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
@@ -21,6 +24,7 @@
             <ul>
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#ProfilDiri">Profil Diri</a></li>
+                <li><a href="#ScrapedData">Scrapping Web 1</a></li>
                 <li><a href="#Galeri">Galeri</a></li>
                 <li><a href="#LessonLearn">Lesson Learn</a></li>
                 <li><a href="#Contact">Contact</a></li>
@@ -83,6 +87,32 @@
             </article>
         </div>
     </main>
+    
+    <section id="ScrapedData">
+        <main>
+            <div class="box flextwo">
+                <article>
+                    <h2>Data Hasil Scraping</h2>
+                    <br />
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Kategori</th>
+                                <th>Judul Berita</th>
+                                <th>Waktu Publish</th>
+                            </tr>
+                        </thead>
+                        <tbody id="scrapedDataBody">
+                            <!-- Data akan dimasukkan di sini -->
+                        </tbody>
+                    </table>
+                    <br /><br />
+                    <div id="scrapingTimeDiv"></div>
+                </article>
+            </div>
+        </main>
+    </section>
+    
 
     <section id="FunFact"> 
     <main>
@@ -237,8 +267,7 @@
     
 
     
-</div>
-    <script src="js/main.js"></script>
+    </div>
 </body>
-
+    <script src="js/main.js"></script>
 </html>
